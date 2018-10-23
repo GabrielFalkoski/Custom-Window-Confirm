@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Custom Confirm!</title>
+	<meta charset="utf-8">
+
+	<script src="assets/javascripts/custom-confirm.js"></script>
+	<link rel="stylesheet" href="assets/styles/custom-confirm.css">
+</head>
+<body>
+	<script>
+		App.confirm({
+			caption: 'Confirmar',
+			message: 'Tem que ver isso aí?',
+			buttons: {
+				ok: 'Ver isso aí',
+				cancel: 'Deixar isso aí, aí'
+			},
+			callback: function(value) {
+				if (value)
+					console.log('Eles vão ver isso aí');
+				else
+					console.log('Eles vão deixar isso aí, aí');
+			}
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+.modal-confirm {
+	background: rgba(0, 0, 0, 0.75);
+	height: 100%;
+	left: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+	padding: 0 15px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 9999999999;
+}
+
+.modal-confirm-main {
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	background: #fff;
+	border-radius: 2px;
+	position: relative;
+	width: 512px;
+}
+
+.modal-confirm-header {
+	background: #371698;
+	box-sizing: inherit;
+	color: #fff;
+	padding: 10px;
+}
+.modal-confirm-body {
+	box-sizing: inherit;
+	font-size: 1rem;
+	overflow: hidden;
+	padding: 16px;
+	width: 100%;
+}
+
+.modal-confirm-footer {
+	border-top: 1px solid rgba(0,0,0,.1);
+	box-sizing: inherit;
+	padding: 10px;
+	width: 100%;
+}
+.modal-confirm-button, .modal-confirm-close {
+	background: 0 0;
+	border: none;
+	border-radius: 2px;
+	color: #000;
+	cursor: pointer;
+	display: inline-block;
+	height: 36px;
+	line-height: 36px;
+	margin: 0;
+	outline: none;
+	padding: 0 16px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
+	vertical-align: middle;
+	will-change: box-shadow;
+}
+.modal-confirm-button:hover, .modal-confirm-close:hover {
+	background: rgba(158,158,158,.2);
+}
+
+.modal-confirm-close {
+	border-radius: 50%;
+	display: inline-block;
+	height: 14px;
+	line-height: 14px;
+	margin: 0;
+	position: absolute;
+	right: 13px;
+	top: 10px;
+	max-width: 32px;
+	padding: 4px;
+	overflow: hidden;
+	color: inherit;
+}
