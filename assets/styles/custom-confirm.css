@@ -1,5 +1,7 @@
 .modal-confirm {
-	background: rgba(0, 0, 0, 0.75);
+	background: rgba(0, 0, 0, 0.1);
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
 	height: 100%;
 	left: 0;
 	overflow-x: hidden;
@@ -13,10 +15,11 @@
 
 .modal-confirm-main {
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
+	box-sizing: inherit;
 	background: #fff;
 	border-radius: 2px;
+	margin: 60px auto;
+	max-width: 100%;
 	position: relative;
 	width: 512px;
 }
