@@ -1,1 +1,1 @@
-# Custom-Window-Confirm-with-Jquery
+# Custom Window Confirm() with Vanilla.js
