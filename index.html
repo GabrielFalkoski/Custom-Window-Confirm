@@ -17,12 +17,11 @@
 				ok: 'Ver isso aí',
 				cancel: 'Deixar isso aí, aí'
 			},
-			callback: function(value) {
-				if (value)
-					console.log('Eles vão ver isso aí');
-				else
-					console.log('Eles vão deixar isso aí, aí');
-			}
+		}, function(value) {
+			if (value)
+				console.log('Eles vão ver isso aí');
+			else
+				console.log('Eles vão deixar isso aí, aí');
 		});
 	</script>
 </body>

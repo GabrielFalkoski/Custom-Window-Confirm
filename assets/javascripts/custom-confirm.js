@@ -1,7 +1,7 @@
 if (typeof App == "undefined") {
    var App = {};
 }
-App.confirm = function (data = {}) {
+App.confirm = function (data = {}, callback) {
     var caption = typeof(data.caption) !== 'undefined' ? data.caption : 'Confirm',
     message = typeof(data.message) !== 'undefined' ? data.message : '',
     buttons = typeof(data.buttons) !== 'undefined' ? data.buttons : {
@@ -25,7 +25,7 @@ App.confirm = function (data = {}) {
             '</div>'+
         '</div>'+
     '</div>',
-    callback = typeof(data.callback) === 'function' ? data.callback : false;
+    callback = typeof(callback) === 'function' ? callback : false;
 
     var body = document.querySelector('body');
     body.innerHTML += html;
